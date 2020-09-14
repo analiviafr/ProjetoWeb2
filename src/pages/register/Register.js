@@ -10,46 +10,34 @@ function Register() {
     async function onRegisterSubmit(e) {
         e.preventDefault();
         if(!email){
-            setError('Digite seu email.');
+            setError('E-mail inválido.');
             return
         }
         if(!password){
-            setError('Digite sua senha.');
+            setError('Senha inválida.');
             return
         }
         try {
-            const token = await axios.post('https://reqres.in/api/register', {"email": email,
-            "password": password});
+            const token = await axios.post('https://reqres.in/api/register', {"email": email, "password": password});
             alert(token.data.token);
         } catch{
-            setError('Cadastro inválido!');
+            setError('E-mail ou senha inválido.');
             return
         }
     }
 
-
     return (
-        <div className="form-user">
-            <h1 id="h1criarconta">Criar conta: </h1>
-            <Link to="/" className="botao" >Voltar</Link>
-            <form onSubmit={onRegisterSubmit}>
-                <label htmlFor="email">E-mail: </label>
-                <input
-                    id="email"
-                    type="text"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                />
-                <label htmlFor="password">Senha: </label>
-                <input
-                    id="password"
-                    type="password"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                />
-                <button type="submit">Criar</button>
-            </form>
-            {error&&<span className="erro-form">{error}</span>}
+        <div className="Register">
+          <h1>Cadastro</h1>
+          <Link to="/" className="Voltar-btn">Voltar</Link>
+          <form onSubmit={onRegisterSubmit}>
+            <label htmlFor="email">E-mail:</label>
+            <input id="email" type="text" value={email} onChange={e => setEmail(e.target.value)}/>
+            <label htmlFor="password">Senha: </label>
+            <input id="password" type="password" value={password} onChange={e => setPassword(e.target.value)}/>
+            <button type="submit">Criar</button>
+          </form>
+          {error&&<span className="erro-form">{error}</span>}
         </div>
     );
 }
