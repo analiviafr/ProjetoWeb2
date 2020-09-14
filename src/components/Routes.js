@@ -1,22 +1,24 @@
 import React from 'react';
-import {Route, BrowserRouter} from 'react-router-dom';
+import {Route, Switch, Router} from 'react-router';
 
 import Login from '../pages/login';
 import Register from '../pages/register';
 import Search from '../pages/search';
 import Home from '../pages/home';
+import PrivateRoute from './PrivateRoute';
 
-function Routes() {
-    return(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/search" component={Search}/>
-            <Route path="/home" component={Home}/>
+import {history} from '../history';
 
+const Routes = () => (
+  <Router history={history}>
+    <Switch>
+      <Route component={Login} exact path="/login"/>
+      <Route component={Register} exact path="/register"/>
+      <PrivateRoute component={Search} exact path="/search" />
+      <PrivateRoute component={Home} exact path="/home"/>
+    </Switch>
 
-        </BrowserRouter>
-    );
-}
+  </Router>
+)
 
 export default Routes;
