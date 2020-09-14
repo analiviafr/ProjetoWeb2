@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Search() {
-  //INSERIR CÓDIGO DA BUSCA
+  return(<h1>INSERIR CÓDIGO DA BUSCA</h1>);
 }

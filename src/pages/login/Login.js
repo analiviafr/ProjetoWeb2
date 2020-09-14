@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import {history} from '../../history';
 import './Login.css';
 
 export default function Login() {
@@ -26,6 +27,9 @@ export default function Login() {
       localStorage.setItem('app-token', res.data.token);
       setError('');
       setFlag(localStorage.getItem('app-token'));
+      window.alert("Login realizado com sucesso!");
+      history.push('/search')
+
     } catch{
       setError('Endereço de email ou senha inválido.');
       return;
@@ -48,7 +52,7 @@ export default function Login() {
         <input id="password" type="password" value={password} placeholder="Digite sua senha" onChange={e => setPassword(e.target.value)}/>
         <br/>
 
-        <Link to="/"><button className="Voltar-btn">Voltar</button></Link>
+        <Link to="/home"><button className="Voltar-btn">Voltar</button></Link>
         <button className="Login-btn" type="submit">Entrar</button>
         </form>
 
