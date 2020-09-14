@@ -53,7 +53,7 @@ export default function Login() {
         <br/>
 
         <Link to="/"><button className="Voltar-btn">Voltar</button></Link>
-        <button className="Login-btn" type="submit">Entrar</button>
+        <button className="Login-btna" type="submit">Entrar</button>
         </form>
 
         {error&&<span  className="Login-error">{error}</span>}
