@@ -3,14 +3,16 @@ import {Route, BrowserRouter} from 'react-router-dom';
 
 import Login from '../pages/login';
 import Register from '../pages/register';
-import NotFound from './NotFound';
+import Home from '../pages/home';
+import Search from '../pages/search';
 
 function Routes() {
     return(
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
-            <Route component={NotFound}/>
+            <Route path="/" component={Home}/>
+            <Route path="/search" component={Search}/>
         </BrowserRouter>
     );
 }
