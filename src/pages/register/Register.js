@@ -22,8 +22,7 @@ function Register() {
     }
     try {
       const token = await axios.post('https://reqres.in/api/register', {"email": email, "password": password});
-      alert(token.data.token);
-      window.alert("Cadastro realizado com sucesso!");
+      window.alert("Cadastro realizado com sucesso! Realize seu login.");
       history.push('/login')
     } catch{
       setError('E-mail ou senha inválido.');
@@ -42,7 +41,7 @@ function Register() {
       <input id="password" type="password" value={password} placeholder="Digite sua senha" onChange={e => setPassword(e.target.value)}/>
       <br/>
 
-      <Link to="/home"><button className="Voltar-btn">Voltar</button></Link>
+      <Link to="/"><button className="Voltar-btn">Voltar</button></Link>
       <button className="Login-btn" type="submit">Cadastrar</button>
       </form>
 
