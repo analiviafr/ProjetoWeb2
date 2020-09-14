@@ -5,6 +5,7 @@ import Login from '../pages/login';
 import Register from '../pages/register';
 import Search from '../pages/search';
 import Home from '../pages/home';
+import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 import {history} from '../history';
@@ -15,7 +16,8 @@ const Routes = () => (
       <Route component={Login} exact path="/login"/>
       <Route component={Register} exact path="/register"/>
       <PrivateRoute component={Search} exact path="/search" />
-      <PrivateRoute component={Home} exact path="/home"/>
+      <Route component={Home} exact path="/home"/>
+      <Route component={NotFound}/>
     </Switch>
 
   </Router>
