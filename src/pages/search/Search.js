@@ -21,6 +21,7 @@ function Search() {
   const [codEstado,setCodEstado] = useState('');
   const [isoEstado,setIsoEstado] = useState('');
   const [insert,setInsert] = useState('');
+  const [setFlag] = useState('');
 
   async function envia(evento){
       evento.preventDefault(); //não deixa que a página seja recarregada após o envio da requisição
@@ -102,8 +103,10 @@ function Search() {
     }
   }
 
-  function desloga(){
-    //implementar
+  function logOut(){
+    localStorage.clear();
+    alert("Usuário deslogado com sucesso!");
+    window.location = '/';
   }
 
   return(
@@ -126,7 +129,7 @@ function Search() {
         </div>
           <div className="LoginBusca">
               <div className="bt_loginb">
-                  <a href={desloga}>Logout [➜</a>
+                  <a onClick={logOut}>Logout [➜</a>
               </div>
           </div>
       </nav>
