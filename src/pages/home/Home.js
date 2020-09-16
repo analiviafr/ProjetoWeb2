@@ -4,19 +4,19 @@ import './tela_media.css';
 import './tela_media_menor.css';
 import './tela_pequena_mobile.css';
 import './tela_pequena_tablet.css';
-import appleIcon from '../../../public/img/Appleicon.PNG';
-import googleIcon from '../../../public/img/Googleicon.PNG';
-import icon from '../../../public/img/icon.png';
-import img3 from '../../../public/img/img3.png';
-import img3_mobile from '../../../public/img/img3_mobile.png';
-import img4 from '../../../public/img/img4.png';
-import img5 from '../../../public/img/img5.png';
-import img6 from '../../../public/img/img6.png';
-import img7 from '../../../public/img/img7.png';
-import img8 from '../../../public/img/img8.png';
-import img12 from '../../../public/img/img12.jpg';
-import logo from '../../../public/img/logo.png';
-import logo2 from '../../../public/img/logo2.png';
+import appleIcon from './Appleicon.PNG';
+import googleIcon from './Googleicon.PNG';
+import icon from './icon.png';
+import img3 from './img3.png';
+import img3_mobile from './img3_mobile.png';
+import img4 from './img4.png';
+import img5 from './img5.png';
+import img6 from './img6.png';
+import img7 from './img7.png';
+import img8 from './img8.png';
+import img12 from './img12.jpg';
+import logo from './logo.png';
+import logo2 from './logo2.png';
 
 class Home extends React.Component{
   render(){
