@@ -1,11 +1,13 @@
-.Loginl {
+.Login-app {
   width: 100%;
   text-align: center;
   clear: both;
   color:rgb(138, 5, 190);
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
-.Loginl input {
+.Login-app input {
   width: 100%;
   clear: both;
 }
