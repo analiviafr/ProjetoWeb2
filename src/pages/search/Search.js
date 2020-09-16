@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import kwelo from '../../Kwelo';
-import './tela_search_grande.css';
-import './tela_search_media.css';
-import './tela_search_pequena.css';
-import logo from './logo.png';
+import './styles/tela_search_grande.css';
+import './styles/tela_search_media.css';
+import './styles/tela_search_pequena.css';
+import logo from './img/logo.png';
 
 function Search() {
 
