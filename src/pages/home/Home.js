@@ -1,22 +1,22 @@
 import React from 'react';
-import './tela_grande.css';
-import './tela_media.css';
-import './tela_media_menor.css';
-import './tela_pequena_mobile.css';
-import './tela_pequena_tablet.css';
-import appleIcon from './Appleicon.PNG';
-import googleIcon from './Googleicon.PNG';
-import icon from './icon.png';
-import img3 from './img3.png';
-import img3_mobile from './img3_mobile.png';
-import img4 from './img4.png';
-import img5 from './img5.png';
-import img6 from './img6.png';
-import img7 from './img7.png';
-import img8 from './img8.png';
-import img12 from './img12.jpg';
-import logo from './logo.png';
-import logo2 from './logo2.png';
+import './styles/tela_grande.css';
+import './styles/tela_media.css';
+import './styles/tela_media_menor.css';
+import './styles/tela_pequena_mobile.css';
+import './styles/tela_pequena_tablet.css';
+import appleIcon from './img/Appleicon.PNG';
+import googleIcon from './img/Googleicon.PNG';
+import icon from './img/icon.png';
+import img3 from './img/img3.png';
+import img3_mobile from './img/img3_mobile.png';
+import img4 from './img/img4.png';
+import img5 from './img/img5.png';
+import img6 from './img/img6.png';
+import img7 from './img/img7.png';
+import img8 from './img/img8.png';
+import img12 from './img/img12.jpg';
+import logo from './img/logo.png';
+import logo2 from './img/logo2.png';
 
 class Home extends React.Component{
   render(){
@@ -50,15 +50,15 @@ class Home extends React.Component{
                     <div className="Login">
 
                         <div className="bt_login">
-                            <a href="">Login ➜]</a>
+                            <a href="/login">Login ➜]</a>
                         </div>
 
                         <div className="bt_querosernu">
-                            <a href="">Quero ser Nubank</a>
+                            <a href="/register">Quero ser Nubank</a>
                         </div>
 
                         <div className="bt_elementos">
-                            <a href="">=</a>
+                            <a href="/login">=</a>
                         </div>
                     </div>
                 </nav>
@@ -69,7 +69,7 @@ class Home extends React.Component{
                         <div className="cabecalho">
                             <h1 className="titulo1">Ser Nubank é <br></br> reinventar sua vida <br></br> financeira</h1>
                             <h2 className="subtitulo1">Conta com rendimento acima <br></br> da poupança, cartão de crédito <br></br> sem anuidade e o melhor: <br></br> resolva tudo pelo app</h2>
-                            <a className="botao" href="">Quero ser Nubank</a>
+                            <a className="botao" href="/register">Quero ser Nubank</a>
                         </div>
                     </aside>
                     <figure className="cont-direito">
