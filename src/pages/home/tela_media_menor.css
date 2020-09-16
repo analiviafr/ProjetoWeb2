@@ -140,7 +140,7 @@
 
   /*primeiro bloco*/
   .conteiner{
-      background-image: url("../img/fundo1.jpg");
+      background-image: url("./fundo1.jpg");
       background-size: cover;
       width: 89%;
       height: 74%;
