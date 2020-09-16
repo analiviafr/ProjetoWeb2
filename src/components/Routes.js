@@ -8,10 +8,8 @@ import Home from '../pages/home';
 import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
-import {history} from '../history';
-
 const Routes = () => (
-  <BrowserRouter history={history}>
+  <BrowserRouter>
     <Switch>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>

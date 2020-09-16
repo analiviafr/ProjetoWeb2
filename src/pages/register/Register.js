@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import {history} from '../../history';
 
 import './Register.css';
 
@@ -23,7 +22,7 @@ function Register() {
     try {
       const token = await axios.post('https://reqres.in/api/register', {"email": email, "password": password});
       window.alert("Cadastro realizado com sucesso! Realize seu login.");
-      history.push('/login')
+      window.location = '/login';
     } catch{
       setError('E-mail ou senha inválido.');
       return
