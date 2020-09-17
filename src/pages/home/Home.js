@@ -21,7 +21,6 @@ import logo2 from './img/logo2.png';
 class Home extends React.Component{
   render(){
     return (
-      //HTML - Projeto 1
       <div>
           <meta charSet="utf-8"></meta>
           <meta name="viewport" content="width=device-width"/>
