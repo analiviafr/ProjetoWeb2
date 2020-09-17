@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
-  <BrowserRouter process.env.PUBLIC_URL}>
+  <BrowserRouter basename=process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
@@ -21,3 +21,13 @@ const Routes = () => (
 )
 
 export default Routes;
+/src/components/Routes.js
+  Line 12:25:  Parsing error: Unexpected token
+
+  10 |
+  11 | const Routes = () => (
+> 12 |   <BrowserRouter process.env.PUBLIC_URL}>
+     |                         ^
+  13 |     <Switch>
+  14 |       <Route exact path="/login" component={Login}/>
+  15 |       <Route exact path="/register" component={Register}/>
