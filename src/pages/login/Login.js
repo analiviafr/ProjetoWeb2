@@ -30,7 +30,7 @@ export default function Login() {
       setFlag(localStorage.getItem('app-token'));
       window.alert("Login realizado com sucesso!");
       //history.push('/search');
-      window.location = 'ProjetoWeb2/search';
+      window.location = '/search';
     } catch{
       setError('Endereço de email ou senha inválido.');
       return;
@@ -53,7 +53,7 @@ export default function Login() {
         <input id="password" type="password" value={password} placeholder="Digite sua senha" onChange={e => setPassword(e.target.value)}/>
         <br/>
 
-        <Link to="/ProjetoWeb2/"><button className="Voltar-btn">Voltar</button></Link>
+        <Link to="/ProjetoWeb2"><button className="Voltar-btn">Voltar</button></Link>
         <button className="Login-btn" type="submit">Entrar</button>
         </form>
 
