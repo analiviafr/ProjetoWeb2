@@ -29,8 +29,7 @@ export default function Login() {
       setError('');
       setFlag(localStorage.getItem('app-token'));
       window.alert("Login realizado com sucesso!");
-      //history.push('/search');
-      window.location = '/search';
+      window.location = '/ProjetoWeb2/search';
     } catch{
       setError('Endereço de email ou senha inválido.');
       return;
