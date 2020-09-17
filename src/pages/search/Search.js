@@ -148,7 +148,7 @@ function Search() {
             <button className="enviaButton" type="submit">Buscar</button>
           </form>
         </div>
-        { //só apresenta a estrutura se ip não for nulo
+        {
           ip &&
           <div className="resultado">
               <p><span>IP: {ip}</span></p>
