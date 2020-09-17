@@ -15,6 +15,7 @@ const Routes = () => (
       <Route exact path="/register" component={Register}/>
       <PrivateRoute path="/search" component={Search}  />
       <Route exact path="/" component={Home} />
+      <Route exact path="/ProjetoWeb2" component={Home} />
       <Route component={NotFound}/>
     </Switch>
   </BrowserRouter>
