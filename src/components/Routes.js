@@ -10,13 +10,13 @@ import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
   <HashRouter>
-      <Switch>
+    <Switch>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
       <PrivateRoute path="/search" component={Search}/>
       <Route exact path="/" component={Home}/>
       <Route component={NotFound}/>
-      </Switch>
+    </Switch>
   </HashRouter>
 )
 
