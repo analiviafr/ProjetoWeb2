@@ -4,8 +4,12 @@ import {BrowserRouter} from 'react-router-dom';
 
 import Routes from './components/Routes';
 
-const App = () => <Routes/>;
-
-
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes/>
+    </BrowserRouter>
+  );
+}
 
 export default App;
