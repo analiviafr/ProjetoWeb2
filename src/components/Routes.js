@@ -9,11 +9,11 @@ import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
-  <HashRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={'ProjetoWeb2'}>
     <Switch>
-      <Route exact path="/#/login" component={Login}/>
-      <Route exact path="/#/register" component={Register}/>
-      <PrivateRoute path="/#/search" component={Search}/>
+      <Route exact path="/login" component={Login}/>
+      <Route exact path="/register" component={Register}/>
+      <PrivateRoute path="/search" component={Search}/>
       <Route exact path="/" component={Home}/>
       <Route component={NotFound}/>
     </Switch>
