@@ -10,7 +10,6 @@ import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
   <HashRouter>
-      <div>
       <Switch>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
@@ -18,7 +17,6 @@ const Routes = () => (
       <Route exact path="/" component={Home}/>
       <Route component={NotFound}/>
       </Switch>
-      </div>
   </HashRouter>
 )
 
