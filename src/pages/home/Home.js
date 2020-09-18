@@ -58,7 +58,7 @@ class Home extends React.Component{
                         </div>
 
                         <div className="bt_elementos">
-                            <Link to="/ProjetoWeb2/#/login">=</Link>
+                            <Link to="/login">=</Link>
                         </div>
                     </div>
                 </nav>
