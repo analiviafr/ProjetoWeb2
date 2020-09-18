@@ -10,10 +10,10 @@ import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Route path="/" exact component={Home}/>
-      <Route path="/ProjetoWeb2/login" exact component={Login}/>
-      <Route path="/ProjetoWeb2/register" exact component={Register}/>
-      <Route path="/ProjetoWeb2/search" exact component={Search}/>
+      <Route exact path="/" exact component={Home}/>
+      <Route exact path="/ProjetoWeb2/login" component={Login}/>
+      <Route exact path="/ProjetoWeb2/register" component={Register}/>
+      <Route exact path="/ProjetoWeb2/search" component={Search}/>
       <Route component={NotFound}/>
   </BrowserRouter>
 )
