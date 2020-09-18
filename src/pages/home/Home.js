@@ -69,7 +69,7 @@ class Home extends React.Component{
                         <div className="cabecalho">
                             <h1 className="titulo1">Ser Nubank é <br></br> reinventar sua vida <br></br> financeira</h1>
                             <h2 className="subtitulo1">Conta com rendimento acima <br></br> da poupança, cartão de crédito <br></br> sem anuidade e o melhor: <br></br> resolva tudo pelo app</h2>
-                            <a className="botao" href="/ProjetoWeb2/register">Quero ser Nubank</a>
+                            <Link className="botao" to="/register">Quero ser Nubank</Link>
                         </div>
                     </aside>
                     <figure className="cont-direito">
