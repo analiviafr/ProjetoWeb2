@@ -49,7 +49,7 @@ class Home extends React.Component{
                     <div className="Login">
 
                         <div className="bt_login">
-                            <a href="/login">Login ➜]</a>
+                            <a href="/ProjetoWeb2/#/login">Login ➜]</a>
                         </div>
 
                         <div className="bt_querosernu">
@@ -57,7 +57,7 @@ class Home extends React.Component{
                         </div>
 
                         <div className="bt_elementos">
-                            <a href="/login">=</a>
+                            <a href="/ProjetoWeb2/#/login">=</a>
                         </div>
                     </div>
                 </nav>

@@ -11,7 +11,7 @@ import PrivateRoute from './PrivateRoute';
 const Routes = () => (
   <HashRouter>
       <div>
-      <Route exact path="/login" component={Login}/>
+      <Route exact path="/ProjetoWeb2/#/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
       <PrivateRoute path="/search" component={Search}/>
       <Route exact path="/" component={Home}/>
