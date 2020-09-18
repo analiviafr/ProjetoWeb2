@@ -5,7 +5,7 @@ import Login from '../pages/login';
 import Register from '../pages/register';
 import Search from '../pages/search';
 import Home from '../pages/home';
-//import NotFound from './NotFound';
+import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
@@ -14,6 +14,7 @@ const Routes = () => (
       <Route exact path="/#register" component={Register}/>
       <PrivateRoute path="/#search" component={Search}/>
       <Route exact path="/" component={Home}/>
+      <Route component={NotFound}/>
   </HashRouter>
 )
 
