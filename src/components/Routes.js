@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, HashRouter} from 'react-router-dom';
 
 import Login from '../pages/login';
 import Register from '../pages/register';
@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter>
     <Switch>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
@@ -17,7 +17,7 @@ const Routes = () => (
       <Route exact path="/" component={Home}/>
       <Route component={NotFound}/>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default Routes;
