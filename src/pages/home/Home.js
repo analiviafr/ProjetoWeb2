@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import './styles/tela_grande.css';
 import './styles/tela_media.css';
 import './styles/tela_media_menor.css';
