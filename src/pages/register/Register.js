@@ -40,7 +40,7 @@ function Register() {
       <input id="password" type="password" value={password} placeholder="Digite sua senha" onChange={e => setPassword(e.target.value)}/>
       <br/>
 
-      <Link to="/ProjetoWeb2"><button className="Voltar-btn">Voltar</button></Link>
+      <Link to="/"><button className="Voltar-btn">Voltar</button></Link>
       <button className="Login-btn" type="submit">Cadastrar</button>
       </form>
 

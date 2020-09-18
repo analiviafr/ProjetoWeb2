@@ -106,7 +106,7 @@ function Search() {
   function logOut(){
     localStorage.clear();
     alert("Usuário deslogado com sucesso!");
-    window.location = '/ProjetoWeb2';
+    window.location = '/';
   }
 
   return(
