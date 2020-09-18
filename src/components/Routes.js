@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 import Login from '../pages/login';
-import Register from '../pages/register/index';
+import Register from '../pages/register';
 import Search from '../pages/search';
 import Home from '../pages/home';
 import NotFound from './NotFound';
