@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './styles/tela_grande.css';
 import './styles/tela_media.css';
 import './styles/tela_media_menor.css';
@@ -49,7 +50,7 @@ class Home extends React.Component{
                     <div className="Login">
 
                         <div className="bt_login">
-                            <a href="/ProjetoWeb2/#/login">Login ➜]</a>
+                            <Link to="/login">Login ➜]</Link>
                         </div>
 
                         <div className="bt_querosernu">
