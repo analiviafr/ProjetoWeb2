@@ -100,6 +100,11 @@
     position: fixed;
   }
 
+  input[type=text], focus {
+    box-shadow: 5px 4px 4px rgba(138,5,190,.35);
+    outline:none;
+  }
+
   .enviaButton{
     border: none;
     background-color: rgb(138,5,190);
