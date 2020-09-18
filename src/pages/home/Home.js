@@ -50,15 +50,15 @@ class Home extends React.Component{
                     <div className="Login">
 
                         <div className="bt_login">
-                            <a href="/login">Login ➜]</a>
+                            <a href="/ProjetoWeb2/login">Login ➜]</a>
                         </div>
 
                         <div className="bt_querosernu">
-                            <a href="/register">Quero ser Nubank</a>
+                            <a href="/ProjetoWeb2/register">Quero ser Nubank</a>
                         </div>
 
                         <div className="bt_elementos">
-                            <a href="/login">=</a>
+                            <a href="/ProjetoWeb2/login">=</a>
                         </div>
                     </div>
                 </nav>
@@ -69,7 +69,7 @@ class Home extends React.Component{
                         <div className="cabecalho">
                             <h1 className="titulo1">Ser Nubank é <br></br> reinventar sua vida <br></br> financeira</h1>
                             <h2 className="subtitulo1">Conta com rendimento acima <br></br> da poupança, cartão de crédito <br></br> sem anuidade e o melhor: <br></br> resolva tudo pelo app</h2>
-                            <a className="botao" href="/register">Quero ser Nubank</a>
+                            <a className="botao" href="/ProjetoWeb2/register">Quero ser Nubank</a>
                         </div>
                     </aside>
                     <figure className="cont-direito">
