@@ -1,5 +1,5 @@
 {
-  "homepage": "https://analiviafr.github.io/ProjetoWeb2",
+  "homepage": "https://analiviafr.github.io/ProjetoWeb2/login",
   "name": "nubank_v2",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "uuidv4": "^6.2.3"
   },
   "scripts": {
     "predeploy": "npm run build",
