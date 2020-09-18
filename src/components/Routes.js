@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
-  <HashRouter basename='/ProjetoWeb2' hashType='noslash'>
+  <HashRouter>
       <div>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/register" component={Register}/>
