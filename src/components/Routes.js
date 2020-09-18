@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 import PrivateRoute from './PrivateRoute';
 
 const Routes = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Switch>
       <Route exact path="/ProjetoWeb2/login" component={Login}/>
       <Route exact path="/ProjetoWeb2/register" component={Register}/>
