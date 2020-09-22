@@ -28,7 +28,7 @@ export default function Login() {
       localStorage.setItem('app-token', res.data.token);
       setError('');
       setFlag(localStorage.getItem('app-token'));
-      window.alert("Login realizado com sucesso!");
+      $("#msg").html("Login realizado com sucesso!");
       window.location = '/ProjetoWeb2/#/search';
     } catch{
       setError('Endereço de email ou senha inválido.');
