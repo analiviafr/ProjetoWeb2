@@ -56,6 +56,8 @@ export default function Login() {
         </form>
 
         {error&&<span  className="Login-error">{error}</span>}
+        {message&&<span className="Login-message">{message}</span>}
+
     </div>
   );
 }
