@@ -70,7 +70,7 @@ input[type=password], focus {
   outline:none;
 }
 
-.Login-btn{
+.Register-btn{
   border: none;
   background-color: rgb(138,5,190);
   color:#fdfdfd;
@@ -83,10 +83,10 @@ input[type=password], focus {
   cursor: pointer;
 }
 
-.Login-btn:hover{
+.Register-btn:hover{
   background-color: rgb(145, 11, 193);
 }
 
-.Login-btn:focus{
+.Register-btn:focus{
   outline:none;
 }
