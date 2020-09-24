@@ -42,10 +42,11 @@ function Register() {
       <br/>
 
       <Link to="/"><button className="Voltar-btn">Voltar</button></Link>
-      <button className="Login-btn" type="submit">Cadastrar</button>
+      <button className="Register-btn" type="submit">Cadastrar</button>
       </form>
 
-      {error&&<span  className="Login-error">{error}</span>}
+      {error&&<span  className="Register-error">{error}</span>}
+      {message&&<span className="Register-message">{message}</span>}
     </div>
   );
 }
