@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
-import {Redirect} from 'react-router';
 import axios from 'axios';
-import Search from '../search/Search';
-import './Login.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -28,8 +25,9 @@ export default function Login() {
       localStorage.setItem('app-token', res.data.token);
       setError('');
       setFlag(localStorage.getItem('app-token'));
-      $("#msg").html("Login realizado com sucesso!");
+      setMessage('Login realizado com sucesso.');
       window.location = '/ProjetoWeb2/#/search';
+      
     } catch{
       setError('Endereço de email ou senha inválido.');
       return;
