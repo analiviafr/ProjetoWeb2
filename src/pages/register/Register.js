@@ -23,7 +23,10 @@ function Register() {
     try {
       const token = await axios.post('https://reqres.in/api/register', {"email": email, "password": password});
       setMessage('Cadastro realizado com sucesso.');
-      window.location = '/ProjetoWeb2/#/login';
+      
+      setTimeout(function () {
+        window.location = '/ProjetoWeb2/#/login';
+       }, 5000);
       
     } catch{
       setError('E-mail ou senha inválido.');
