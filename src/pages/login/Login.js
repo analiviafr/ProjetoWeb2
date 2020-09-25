@@ -9,6 +9,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(['']);
   const [flag, setFlag] = useState('');
+  const [message, setMessage] = useState('');
 
   async function onLoginSubmit(e) {
     e.preventDefault();
