@@ -4,6 +4,10 @@ O presente projeto foi desenvolvido para a disciplina de Programação Web, real
 
 As páginas de login e cadastro são autenticadas a partir da API [Regres](https://reqres.in/). Foi implementada também uma página de busca de IP, que utiliza a API [Kwelo](https://www.kwelo.com/), a qual possui rota privada e só pode ser acessada após a realização do login.
 
+As credenciais de cadastro e de login da API Regres utilizada são:
+email: eve.holt@reqres.in
+senha: cityslicka
+
 O projeto completo pode ser visualizado em: https://analiviafr.github.io/ProjetoWeb2
 
 ### Available Scripts
